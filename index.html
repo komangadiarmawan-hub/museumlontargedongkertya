@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Lontar Gedong Kertya - Digital Museum</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-scroll logo-icon"></i>
+            <div>
+                <h1>Gedong Kertya</h1>
+                <span>Museum Lontar Digital</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#koleksi">Koleksi Lontar</a></li>
+                <li><a href="#tiket">Tiket Masuk</a></li>
+                <li><a href="#virtual-tour">Virtual Tour</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Selamat Datang di Museum Digital</h2>
+                <h1>MUSEUM LONTAR GEDONG KERTYA</h1>
+                <p>Menjelajahi Kekayaan Manuskrip Kuno & Warisan Sastra Budaya Bali</p>
+                <a href="#koleksi" class="btn-primary">Jelajahi Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sejarah Section -->
+    <section id="sejarah" class="section sejarah-section">
+        <div class="container">
+            <h2 class="section-title">Sejarah Museum Gedong Kertya</h2>
+            <div class="sejarah-grid">
+                <div class="sejarah-img">
+                    <img src="src/images/gambar_gedong_kertya.jpg" alt="Sejarah Gedong Kertya">
+                </div>
+                <div class="sejarah-text">
+                    <p><strong>Gedong Kertya</strong> didirikan pada tanggal 2 Juni 1928 oleh cendekiawan Belanda F.A. Liefrinck dan Dr. H.N. van der Tuuk, dan resmi dibuka untuk umum pada 14 September 1928.</p>
+                    <p>Museum ini berfungsi menyimpan, merawat, dan memelihara ribuan koleksi manuskrip daun lontar, prasasti perunggu, serta buku-buku langka yang mencakup bidang agama, arsitektur, pengobatan tradisional (Usada), hukum adat (Awig-awig), sejarah, dan filsafat Nusantara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Koleksi Lontar Digital Section -->
+    <section id="koleksi" class="section koleksi-section">
+        <div class="container">
+            <h2 class="section-title">Koleksi & Eksplor Lontar Digital</h2>
+            
+            <!-- Kategori Filter -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua Koleksi</button>
+                <button class="filter-btn" data-filter="alat">Peralatan & Bahan</button>
+                <button class="filter-btn" data-filter="lontar">Manuskrip Lontar</button>
+                <button class="filter-btn" data-filter="penyimpanan">Ruang & Penyimpanan</button>
+            </div>
+
+            <!-- Gallery Grid (29 Gambar) -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Javascript akan memuat gambar otomatis -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tiket Masuk -->
+<section id="tiket" class="section">
+    <h2 class="section-title">Informasi & Tiket Masuk</h2>
+    <div class="tiket-container">
+        <!-- Card 1: Nusantara Dewasa -->
+        <div class="tiket-card">
+            <h3>Dewasa / Nusantara</h3>
+            <div class="harga">Rp 5.000 – Rp 10.000</div>
+            <p>Berlaku untuk wisatawan domestik dewasa.</p>
+        </div>
+
+        <!-- Card 2: Anak-anak -->
+        <div class="tiket-card">
+            <h3>Anak-anak</h3>
+            <div class="harga">Rp 3.000 – Rp 5.000</div>
+            <p>Berlaku untuk pelajar & anak-anak domestik.</p>
+        </div>
+
+        <!-- Card 3: Wisatawan Mancanegara -->
+        <div class="tiket-card featured">
+            <h3>Wisatawan Mancanegara</h3>
+            <div class="harga">Rp 25.000</div>
+            <p>Berlaku untuk wisatawan asing (Wisman).</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Virtual Tour Section -->
+    <section id="virtual-tour" class="section virtual-tour-section">
+        <div class="container">
+            <h2 class="section-title">Virtual Tour Gedong Kirtya</h2>
+            <p class="section-subtitle">Jelajahi keindahan suasana interior ruang penyimpanan lontar secara virtual</p>
+            <div class="tour-card">
+                <img src="src/images/gambar_20_rak_keropak_lontar_2.jpeg" alt="Virtual Tour Area">
+                <div class="tour-info">
+                    <h3>Ruang Utama Penyimpanan Keropak Lontar</h3>
+                    <p>Ruangan bersejarah yang menyimpan ribuan lontar kuno dalam wadah kayu ukir berharga (Keropak).</p>
+                    <button class="btn-secondary" onclick="openModal(22)">Jelajahi Ruangan ini</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi & GMaps Section -->
+    <section id="lokasi" class="section lokasi-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Museum</h2>
+            <div class="lokasi-grid">
+                <div class="lokasi-info">
+                    <h3><i class="fa-solid fa-location-dot"></i> Alamat Singaraja</h3>
+                    <p>Jl. Veteran No.20, Singaraja, Kec. Buleleng, Kabupaten Buleleng, Bali 81117</p>
+                    <hr>
+                    <h3><i class="fa-solid fa-clock"></i> Jam Operasional</h3>
+                    <p>Senin - Kamis: 07.30 - 15.30 WITA</p>
+                    <p>Jumat: 07.30 - 13.00 WITA</p>
+                    <p>Sabtu & Minggu: Tutup</p>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9443210452604!2d115.09012497576566!3d-8.107147791921764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b12a8497d31%3A0x6b84eb48bfa30252!2sMuseum%20Gedong%20Kirtya!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" 
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Viewer (Zoom, Navigasi, Audio Narasi) -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="modal-content-wrapper">
+            <!-- Navigasi Kiri -->
+            <button class="nav-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <div class="modal-image-container">
+                <img id="modalImg" src="" alt="Detail Koleksi">
+                
+                <!-- Zoom Controls -->
+                <div class="zoom-controls">
+                    <button id="zoomInBtn" title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                    <button id="zoomOutBtn" title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+                    <button id="resetZoomBtn" title="Reset Zoom"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <!-- Panel Detail & Audio Narasi -->
+            <div class="modal-details">
+                <h3 id="modalTitle">Judul Lontar</h3>
+                <p id="modalDesc">Deskripsi koleksi...</p>
+                
+                <!-- Fitur Audio Narasi -->
+                <div class="audio-narasi-box">
+                    <h4><i class="fa-solid fa-volume-high"></i> Audio Narasi</h4>
+                    <div class="audio-controls">
+                        <button id="playAudioBtn"><i class="fa-solid fa-play"></i> Putar Audio</button>
+                        <button id="pauseAudioBtn"><i class="fa-solid fa-pause"></i> Jeda</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigasi Kanan -->
+            <button class="nav-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Museum Lontar Gedong Kertya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
